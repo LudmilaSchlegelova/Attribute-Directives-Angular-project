@@ -1,0 +1,8 @@
+<li
+  *ngFor="let country of countries"
+  (click)="isVisible(country.id)"
+  [@customAnimation]="country.visible"
+>
+  <span class="id">{{ country.id }}</span
+  ><span>{{ country.title }}</span>
+</li>
